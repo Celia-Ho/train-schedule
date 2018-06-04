@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;  
+    background-color: darkblue;
+}
+
+.jumbotron, .card-body{
+    background-color: lightblue;
+}
+
+.card-header{
+    background-color: blue;
+}

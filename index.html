@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- Jumbotron for Title of Page -->
+  <div class="jumbotron">
+    <h2 class="display-4 text-center">Train Schedule</h2>
+    <h3 class="text-center">ADD A TRAIN OR VIEW THE SCHEDULE</p>
+  </div>
+
+  <!-- Current Time -->
+  <h3 class="text-center clock-display text-white">Current Time:
+    <span id="current-time" class="clock-display"></span>
+  </h3>
+  <br>
+  <!-- Main Page Container -->
+
+  <div class="container">
+
+    <!-- Current Train Schedule Panel -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header text-white">
+            Current Train Schedule
+          </div>
+          <div class="card-body">
+            <!-- Table of Train Schedule -->
+            <table class="table">
+
+              <!-- Table Header -->
+              <thead class="thead-light">
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Frequency (min)</th>
+                  <th>Next Departure</th>
+                  <th>Minutes to Departure</th>
+                </tr>
+              </thead>
+
+
+              <!-- Note: Table Body is Dynamically Generated -->
+
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <!-- Add a Train Card-->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <!-- Card Title -->
+          <div class="card-header text-white">
+            Add a Train
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+
+            <!-- Add a Train Form -->
+            <form role="form">
+
+              <!-- Train Name -->
+              <div class="form-group">
+                <label for="text">Train Name</label>
+                <input type="text" class="form-control" id="nameInput">
+              </div>
+
+              <!-- Destination -->
+              <div class="form-group">
+                <label for="text">Train Destination</label>
+                <input type="text" class="form-control" id="destinationInput">
+              </div>
+
+              <!-- First Train Time -->
+              <div class="form-group">
+                <label for="text">First Departure for Today (Military Time - hh:mm)</label>
+                <input type="text" class="form-control" id="firstArrivalInput">
+              </div>
+
+              <!-- Frequency -->
+              <div class="form-group">
+                <label for="text">Frequency of Departures (min)</label>
+                <input type="number" class="form-control" id="frequencyInput">
+              </div>
+
+              <!-- Submit Button (send to database) -->
+              <button type="submit" class="btn btn-default" id="addTrainButton">Submit</button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- Add a footer -->
+  <div class="static-bottom">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- The content in this div gets wrapped in a card -->
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              Copyright &copy; 2018 by Silly Games
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Link in jQuery CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Link in Fire Base CDN -->
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+      <!-- Link in Moment.js CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+
+      <!-- Link in JavaScript -->
+      <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

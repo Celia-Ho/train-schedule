@@ -1,10 +1,10 @@
 # Train Schedule
 
-### Overview
+## Overview
 
 In this assignment, the objective was to create a train schedule application that incorporates Firebase to host arrival and departure data. My app retrieves and manipulates the data with Moment.js. This website provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
 
-### Requirements
+## Requirements
 
 * App must suit these basic specs:
   * When adding trains, administrators should be able to submit the following:
@@ -15,7 +15,9 @@ In this assignment, the objective was to create a train schedule application tha
   * Calculate when the next train will arrive; relative to the current time.
   * Users from many different machines must be able to view same train times.
 
-### Link
-[Train-Schedule](https://celiho.github.io/train-schedule/)
+## Deployed Link
+See the deployed website [here](https://Celia-Ho.github.io/train-schedule/)
 
-Link to my Portfolio GitHub Page:  https://celiho.github.io/Responsive-Portfolio/
+## Tools/languages used:  
+
+Firebase, API, Moment.js, Bootstrap, JavaScript, CSS, HTML, Git
